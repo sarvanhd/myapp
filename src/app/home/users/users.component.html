@@ -1,0 +1,19 @@
+<br><br>
+<table id="usersTable" class="table table-bordered table-responsive table-hover">
+  <thead class="bg-secondary">
+    <tr>
+      <th class="col-sm-3">Firstname</th>
+      <th class="col-sm-3">Lastname</th>
+      <th class="col-sm-3">Email</th>
+      <th class="col-sm-3">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td><a (click)="deleteUser(user.id)" class="text-danger"><i class="fas fa-trash-alt"></i></a></td>
+    </tr>
+  </tbody>
+</table>
