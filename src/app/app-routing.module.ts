@@ -5,7 +5,7 @@ import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: './home/home.module'
+    loadChildren: './home/home.module#HomeModule'
     //canLoad: [AuthGuard]
   },
 { path: '', redirectTo: '/home', pathMatch: 'full'},
