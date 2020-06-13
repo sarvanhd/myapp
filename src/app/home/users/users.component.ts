@@ -9,7 +9,7 @@ import { UsersService } from 'src/app/services/users.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  private users: User[] = [];
+  users: User[] = [];
   @Output()
   userCount: EventEmitter<any> = new EventEmitter();
   constructor(private userService: UsersService) { }
