@@ -9,7 +9,16 @@ const routes: Routes = [
     //canLoad: [AuthGuard]
   },
 { path: '', redirectTo: '/home', pathMatch: 'full'},
-
+{
+  path: 'login',
+  loadChildren: './login/login.module#LoginModule'
+  //canLoad: [AuthGuard]
+},
+{
+  path: 'register',
+  loadChildren: './login/login.module#LoginModule'
+  //canLoad: [AuthGuard]
+},
 // otherwise redirect to home
 { path: '**', redirectTo: '/home' }];
 
