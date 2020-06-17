@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  authUrl: 'http://login-sarvanhd.us-east-2.elasticbeanstalk.com',
-  userUrl: 'http://usermanagement-sarvanhd.us-east-2.elasticbeanstalk.com'
+  authUrl: 'https://login-sarvanhd.us-east-2.elasticbeanstalk.com',
+  userUrl: 'https://usermanagement-sarvanhd.us-east-2.elasticbeanstalk.com'
 };
